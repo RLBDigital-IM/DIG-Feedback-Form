@@ -1,1 +1,113 @@
 
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Feedback Form</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            input[type="text"], input[type="email"], textarea {
+                padding: 8px;
+            }
+            input[type="submit"] {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+<style>
+body {
+    background-color: #001F3F;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+input[type="text"], input[type="email"], textarea {
+    background-color: #001F3F;
+    color: white;
+    border: 1px solid #FF4136; /* Red accent */
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #0074D9; /* Light blue accent */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #FF4136; /* Red accent */
+}
+</style></head>
+<body><img alt="RLB Digital Logo" src="UploadedImage7.jpg" style="display:block;margin:auto;width:150px;height:auto;"/>
+<div class="container">
+<h2>Feedback Form</h2>
+<form action="https://formspree.io/f/{your_form_id}" method="POST">
+<label for="name">Name:</label>
+<input id="name" name="name" required="" type="text"/>
+<label for="email">Email:</label>
+<input id="email" name="email" required="" type="email"/>
+<label for="experience">Your overall experience working with us:</label>
+<textarea id="experience" name="experience" required="" rows="4"></textarea>
+<label for="positive">What you felt we did well:</label>
+<textarea id="positive" name="positive" required="" rows="4"></textarea>
+<label for="improvement">Any areas where we could improve:</label>
+<textarea id="improvement" name="improvement" required="" rows="4"></textarea>
+<label for="impact">The impact the project has had on your business or team:</label>
+<textarea id="impact" name="impact" required="" rows="4"></textarea>
+<input type="submit" value="Submit Feedback"/>
+</form>
+</div>
+</body>
+</html>
